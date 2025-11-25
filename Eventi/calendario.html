@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ludoteca webpage | Calendario</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="calendarioStyle.css" />
+</head>
+<body>
+
+  <div class="navbar-top">
+    <div class="logo">🎉</div>
+    <div class="title"><a href="homeEventi.html">Ludoteca</a></div>
+    <div class="logo"><a href="registrazione.html">Registrati</a></div>
+  </div>
+
+  <nav class="navbar-bottom">
+    <a href="sale.html">Sale</a>
+    <a href="cucina.html">Cucina</a>
+    <a href="bar.html">Bar</a>
+    <a href="calendario.html">Calendario</a>
+  </nav>
+
+  <main class="page-wrap">
+    <section class="calendar-header">
+      <button class="calendar-btn" id="prevBtn">←</button>
+      <div class="calendar-title" id="calendarTitle"></div>
+      <button class="calendar-btn" id="nextBtn">→</button>
+    </section>
+
+    <section class="calendar">
+      <div class="calendar-weekdays">
+        <div>Lu</div><div>Ma</div><div>Me</div><div>Gi</div><div>Ve</div><div>Sa</div><div>Do</div>
+      </div>
+      <div class="calendar-grid" id="calendarGrid"></div>
+    </section>
+  </main>
+
+  <script src="calendarioJ.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+:root {
+  --accent: #cba6f7;   /* viola pastello per pulsanti */
+  --bg: #000000;       /* sfondo nero */
+  --text: #ffffff;     /* testo bianco */
+  --muted: #bbbbbb;    /* grigio chiaro */
+  --border: #444444;   /* grigio scuro */
+  --today: #d0a9f5;    /* viola chiaro per evidenziare oggi */
+
+
+
+.page-wrap {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+/* Intestazione calendario */
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.calendar-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.calendar-btn {
+  background: var(--accent);  
+  color: black;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.calendar-btn:hover {
+  background: #b48ef0; /* tono leggermente più scuro al passaggio */
+}
+
+/* Griglia calendario */
+.calendar {
+  background: #111111;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.calendar-weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  background: #222222;
+}
+
+.calendar-weekdays div {
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: var(--muted);
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.day {
+  min-height: 80px;
+  border: 1px solid var(--border);
+  padding: 8px;
+  position: relative;
+  background: #000000;
+  color: var(--text);
+}
+
+.day-number {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.outside {
+  background: #1a1a1a;
+  color: #555555;
+}
+
+.today {
+  border-bottom: 3px solid var(--today); /* linea viola chiaro sotto il giorno */
+}

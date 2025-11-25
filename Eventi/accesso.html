@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accesso</title>
+  <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+  <div class="navbar-top">
+    <div class="logo">🎉</div>
+    <div class="title"><a href="homeludo.html">Ludoteca</a></div>
+    <div class="logo"><a href="registrazione.html">Registrati</a></div>
+  </div>
+  <nav class="navbar-bottom">
+    <a href="sale.html">Sale</a>
+    <a href="feste.html">Feste</a>
+    <a href="cucina.html">Cucina</a>
+    <a href="bar.html">Bar</a>
+    <a href="calendario.html">Calendario</a>
+  </nav>
+  <main>
+    <div class="register-container">
+      <h1>Accedi</h1>
+      <form id="loginForm">
+        <label for="username">Nome utente</label>
+        <input type="text" id="username" name="username" required>
+        
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+        
+        <div id="errorMessage" style="color: red; margin: 10px 0; display: none;"></div>
+        
+        <button type="submit">Login</button>
+      </form>
+      <p>Non hai un account? <a href="registrazione.html">Registrati qui</a></p>
+    </div>
+  </main>
+  <script src="login.js"></script>
+</body>
+</html>

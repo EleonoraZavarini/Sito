@@ -1,0 +1,311 @@
+body {
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  font-family: Calibri, sans-serif;
+}
+
+main {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+/*---Titoli---*/
+h1, h2, h3 {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/*---Navbar---*/
+/*---Superiore---*/
+.navbar-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111;
+  padding: 10px 20px;
+  border-bottom: 1px solid #444;
+}
+
+.navbar-top .logo {
+  font-size: 1.5em;
+}
+
+.navbar-top .title {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.navbar-top .register a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/*---Inferiore---*/
+.navbar-bottom {
+  display: flex;
+  justify-content: center;
+  background-color: #222;
+  padding: 10px 0;
+  border-bottom: 1px solid #444;
+}
+
+.navbar-bottom a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+.navbar-bottom a:hover {
+  text-decoration: underline;
+}
+
+/*---Sale---*/
+.centered-title {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 2em;
+}
+
+.sale-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.sale-item {
+  display: flex;
+  align-items: flex-start;
+  background-color: #111;
+  border: 1px solid #333;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.sale-item img {
+  width: 200px;
+  height: auto;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.sale-info {
+  flex: 1;
+}
+
+.sale-info h2 {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.sale-info p {
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+/*---Quadrati feste---*/
+.feste-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 40px auto;
+  max-width: 1000px;
+  flex-wrap: wrap;
+}
+
+.festa-card {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+}
+
+.festa-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; 
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background-color: #000; 
+}
+
+.festa-card .title {
+  position: absolute;
+  top: 50%;              
+  left: 50%;             
+  transform: translate(-50%, -50%); 
+  font-size: 1.4em;
+  font-weight: bold;
+  background-color: rgba(0,0,0,0.5); 
+  padding: 8px 12px;
+  border-radius: 5px;
+  text-align: center;
+  z-index: 1;
+}
+/*---Quadrati eventi---*/
+.eventi-grid {
+  display: flex;
+  flex-direction: column;   
+  align-items: center;     
+  gap: 40px;                
+  margin: 40px auto;
+}
+
+.eventi-grid .row {
+  display: flex;
+  justify-content: center;  
+  gap: 30px;                
+}
+
+.eventi-card {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  flex-direction: column;
+  overflow: hidden;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+}
+
+.eventi-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; 
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background-color: #000; 
+}
+
+.eventi-card .title {
+  position: absolute;
+  top: 50%;              
+  left: 50%;             
+  transform: translate(-50%, -50%); 
+  font-size: 1.4em;
+  font-weight: bold;
+  background-color: rgba(0,0,0,0.5); 
+  padding: 8px 12px;
+  border-radius: 5px;
+  text-align: center;
+  z-index: 1;
+}
+
+.eventi-card .evento-date {
+  margin-top: 5px;
+  font-size: 0.95em;
+  color: #555;
+}
+
+/*---Form Registrazione---*/
+.register-container {
+  background-color: #111;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 30px;
+  max-width: 500px;
+  margin: 50px auto;
+}
+
+.register-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.register-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.register-container label {
+  font-weight: bold;
+}
+
+.register-container input {
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background-color: #000;
+  color: #fff;
+}
+
+.register-container input:focus {
+  outline: none;
+  border-color: #888;
+}
+
+.register-container button {
+  padding: 12px;
+  background-color: #444;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.register-container button:hover {
+  background-color: #666;
+}
+
+.register-container p {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.register-container a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/*---Pulsante prenotazione---*/
+.page-footer {
+  display: flex;
+  justify-content: center;
+  padding: 24px 16px 32px;
+}
+
+/* Pulsante viola pastello */
+.btn-prenota {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 140px;
+  padding: 12px 18px;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  color: #2b1b36;               
+  background: #d9c7f0;          
+  border: 1px solid #cdb8ea;    
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(65, 39, 87, 0.12);
+  transition: background 160ms ease, box-shadow 160ms ease, transform 120ms ease;
+}
+.btn-prenota:hover {
+  background: #cfbaf0;          
+  box-shadow: 0 4px 10px rgba(65, 39, 87, 0.18);
+}
+.btn-prenota:active {
+  transform: translateY(1px);
+}

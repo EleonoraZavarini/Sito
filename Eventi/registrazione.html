@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Ludoteca | Registrazione</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="navbar-top">
+    <div class="logo">🎉</div>
+    <div class="title"><a href="homeludo.html">Ludoteca</a></div>
+    <div class="logo"><a href="registrazione.html">Registrati</a></div>
+  </div>
+  <nav class="navbar-bottom">
+    <a href="sale.html">Sale</a>
+    <a href="feste.html">Feste</a>
+    <a href="cucina.html">Cucina</a>
+    <a href="bar.html">Bar</a>
+    <a href="calendario.html">Calendario</a>
+  </nav>
+  <main>
+    <div class="register-container">
+      <h1>Crea il tuo account</h1>
+      <form id="registerForm">
+        <label for="username">Nome utente</label>
+        <input type="text" id="username" name="username" required>
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required minlength="6">
+        
+        <label for="confirm-password">Conferma Password</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+        
+        <div id="errorMessage" style="color: red; margin: 10px 0; display: none;"></div>
+        <div id="successMessage" style="color: green; margin: 10px 0; display: none;"></div>
+        
+        <button type="submit">Registrati</button>
+      </form>
+      <p>Hai già un account? <a href="accesso.html">Accedi qui</a></p>
+    </div>
+  </main>
+
+  <script src="register.js"></script>
+</body>
+</html>
