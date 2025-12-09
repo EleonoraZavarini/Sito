@@ -2,28 +2,69 @@
 <html lang="it">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <link rel="stylesheet" href="style.css" />
-  <title>Ludoteca webpage | Feste a Tema</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Ludoteca - Feste a Tema</title>
   <style>
-    
-    .container{ max-width:var(--maxwidth); margin:18px auto; padding:18px; }
+    .container {
+      max-width: var(--maxwidth);
+      margin: 18px auto;
+      padding: 18px;
+    }
 
-    .entry{ display:flex; gap:18px; align-items:center; padding:14px; margin:18px 0; border-radius:10px; background:rgba(255,255,255,0.02); border:1px solid rgba(255,255,255,0.03); }
-    .entry.left{ flex-direction:row; }
-    .entry.right{ flex-direction:row-reverse; }
-    
+    .entry {
+      display: flex;
+      gap: 18px;
+      align-items: center;
+      padding: 14px;
+      margin: 18px 0;
+      border-radius: 10px;
+    }
+
+    .entry.left { flex-direction: row; }
+    .entry.right { flex-direction: row-reverse; }
+
+    .thumb img {
+      max-width: 160px;
+      border-radius: 8px;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #0077cc;
+      margin-left: 8px;
+    }
+
+    .tag {
+      display: inline-block;
+      margin-right: 8px;
+      padding: 4px 8px;
+      border-radius: 6px;
+      font-size: 0.9em;
+    }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Feste a Tema</h1>
-    <p>Pagina dedicata esclusivamente alle feste a tema. Troverai indicazione se sono consigliate per maggiorenni o minorenni.</p>
-  </header>
 
-  <div class="container">
+  <div class="navbar-top">
+    <div class="logo">🎉</div>
+    <div class="title"><a href="homeEventi.html">Ludoteca</a></div>
+    <div class="logo"><a href="registrazione.html">Registrati</a></div>
+  </div>
+
+  <nav class="navbar-bottom">
+    <a href="sale.html">Sale</a>
+    <a href="cucina.html">Cucina</a>
+	<a href="bar.html">Bar</a>
+    <a href="calendario.html">Calendario</a>
+  </nav>
+
+  <main class="container">
+
     <article class="entry left">
-      <div class="thumb"><img src="arcade.png" alt="Arcade"></div>
+      <div class="thumb">
+        <img src="immagini/arcade.png" alt="Locandina festa Giochi Arcade">
+      </div>
       <div class="content">
         <h3>Giochi Arcade <span class="price">80€</span></h3>
         <div>
@@ -35,7 +76,9 @@
     </article>
 
     <article class="entry right">
-      <div class="thumb"><img src="horror.png" alt="Horror"></div>
+      <div class="thumb">
+        <img src="immagini/horror.png" alt="Locandina festa Horror">
+      </div>
       <div class="content">
         <h3>Horror <span class="price">100€</span></h3>
         <div>
@@ -47,7 +90,9 @@
     </article>
 
     <article class="entry left">
-      <div class="thumb"><img src="anime.png" alt="Anime"></div>
+      <div class="thumb">
+        <img src="immagini/anime.png" alt="Locandina festa Anime">
+      </div>
       <div class="content">
         <h3>Anime <span class="price">70€</span></h3>
         <div>
@@ -57,6 +102,6 @@
         <p>Festa colorata per appassionati di anime: cosplay, decorazioni e premi per i migliori costumi. Contenuti adatti anche a minorenni.</p>
       </div>
     </article>
-  </div>
+  </main>
 </body>
 </html>
