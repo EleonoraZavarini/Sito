@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Feste di Compleanno - Reception</title>
+  <style>
+
+  
+    .container{ max-width:var(--maxwidth); margin:18px auto; padding:18px; }
+
+    .entry{ display:flex; gap:18px; align-items:center; padding:14px; margin:16px 0; border-radius:10px; background:rgba(255,255,255,0.02); border:1px solid rgba(255,255,255,0.03); }
+    .entry.left{ flex-direction:row; }
+    .entry.right{ flex-direction:row-reverse; }
+   
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Feste di Compleanno</h1>
+    <p>Pagina con tutte le proposte per feste di compleanno — specificato per maggiorenni o minorenni.</p>
+
+  
+    <div style="display:flex;justify-content:center;margin-top:16px;">
+      <div class="thumb">
+        <img src="compleanno.png" alt="Immagine festa">
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <nav style="text-align:center;margin-bottom:12px;">
+      <a href="feste.html" style="color:inherit;text-decoration:none;padding:8px 12px;background:rgba(255,255,255,0.03);border-radius:8px;">torna indietro</a>
+     
+    </nav>
+
+  
+
+    <article class="entry left">
+      <div class="content">
+        <h3>Compleanno: Giochi da tavolo <span class="price">60€</span></h3>
+        <div>
+          <span class="tag">Minorenni &amp; Maggiorenni</span>
+          <span class="tag">Attività: Torneo di giochi da tavolo, premi</span>
+        </div>
+        <p>Perfetto per gruppi che preferiscono una festa tranquilla ma divertente con giochi di società e gare a squadre.</p>
+      </div>
+    </article>
+
+    <article class="entry right">
+      <div class="content">
+        <h3>Compleanno: Giochi generici <span class="price">50€</span></h3>
+        <div>
+          <span class="tag">Minorenni</span>
+          <span class="tag">Attività: giochi, premi, torta</span>
+        </div>
+        <p>Pacchetto pensato per feste per ragazzi: attività semplici, premi e animazione base.</p>
+      </div>
+    </article>
+
+    <article class="entry left">
+      <div class="content">
+        <h3>Compleanno: Casinò <span class="price">120€</span></h3>
+        <div>
+          <span class="tag">Maggiorenni</span>
+          <span class="tag">Attività: Poker, Roulette, Slot</span>
+        </div>
+        <p>Pacchetto sofisticato per adulti: tavoli da gioco simulati e premi. Richiesta verifica età.</p>
+      </div>
+    </article>
+
+  </div>
+</body>
+</html>
