@@ -329,10 +329,6 @@ h1, h2, h3 {
   flex-direction: column;
   gap: 20px;
 }
-.contatti-form-wrapper {
-  flex: 1;
-  min-width: 300px;
-}
 .info-card {
   background-color: #111;
   border: 1px solid #333;
@@ -356,3 +352,4 @@ footer { /*Copyright*/
   color: white; 
   font-size: 14px; 
 }
+
